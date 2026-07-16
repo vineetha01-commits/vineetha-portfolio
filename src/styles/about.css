@@ -1,0 +1,384 @@
+.about {
+
+    padding:120px 10%;
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffffff,
+        #f8fafc
+    );
+
+}
+
+
+
+/* Header */
+
+.about-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+
+
+.about-header h2{
+
+    font-size:3rem;
+
+    color:#111827;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.about-header p{
+
+    color:#6b7280;
+
+    font-size:1.2rem;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+/* Main Layout */
+
+.about-container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr .8fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+
+
+
+/* Timeline */
+
+.journey{
+
+    position:relative;
+
+}
+
+
+
+.journey::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:27px;
+
+    top:0;
+
+    height:100%;
+
+    width:3px;
+
+    background:#2563eb;
+
+}
+
+
+
+
+
+.journey-item{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+}
+
+
+
+
+
+.journey-item span{
+
+    min-width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:white;
+
+    border-radius:50%;
+
+    font-size:1.7rem;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.12);
+
+    z-index:2;
+
+}
+
+
+
+
+
+.journey-item div{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+
+
+
+
+.journey-item div:hover{
+
+    transform:translateX(12px);
+
+    box-shadow:
+
+    0 15px 35px rgba(37,99,235,.15);
+
+}
+
+
+
+
+
+.journey-item h3{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+    font-size:1.25rem;
+
+}
+
+
+
+
+
+.journey-item p{
+
+    color:#4b5563;
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+
+
+
+
+
+/* Quote Section */
+
+.about-quote{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #1e40af
+    );
+
+    color:white;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 20px 40px rgba(37,99,235,.25);
+
+    transition:.35s ease;
+
+}
+
+
+
+.about-quote:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+.about-quote h3{
+
+    font-size:1.8rem;
+
+    line-height:1.5;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+/* Tags */
+
+.creative-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+
+
+
+
+.creative-tags span{
+
+    background:
+
+    rgba(255,255,255,.18);
+
+    padding:10px 15px;
+
+    border-radius:25px;
+
+    font-size:.95rem;
+
+    transition:.3s ease;
+
+}
+
+
+
+
+
+.creative-tags span:hover{
+
+    background:white;
+
+    color:#2563eb;
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .about-header h2{
+
+        font-size:2.2rem;
+
+    }
+
+
+
+    .about-quote{
+
+        padding:30px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .about{
+
+        padding:90px 5%;
+
+    }
+
+
+
+    .journey-item{
+
+        gap:15px;
+
+    }
+
+
+
+    .journey-item span{
+
+        min-width:45px;
+
+        height:45px;
+
+        font-size:1.3rem;
+
+    }
+
+
+}

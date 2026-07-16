@@ -1,0 +1,297 @@
+.gallery{
+
+    padding:120px 10%;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #ffffff,
+        #f8fafc
+    );
+
+}
+
+
+
+
+
+.gallery-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+
+
+
+.gallery-tag{
+
+    display:inline-block;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.gallery-header h2{
+
+    font-size:3rem;
+
+    color:#111827;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.gallery-subtitle{
+
+    color:#6b7280;
+
+    font-size:1.2rem;
+
+}
+
+
+
+
+
+
+
+.gallery-grid{
+
+
+    max-width:1100px;
+
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+
+
+.gallery-item{
+
+
+    height:300px;
+
+
+    overflow:hidden;
+
+
+    border-radius:22px;
+
+
+    position:relative;
+
+
+    box-shadow:
+
+
+    0 10px 25px rgba(0,0,0,.1);
+
+
+    transition:.35s ease;
+
+
+}
+
+
+
+
+
+.gallery-item:hover{
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+
+    0 25px 45px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+.gallery-item img{
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    transition:.5s ease;
+
+
+}
+
+
+
+
+
+.gallery-item:hover img{
+
+
+    transform:scale(1.12);
+
+
+}
+
+
+
+
+
+
+
+.gallery-overlay{
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:
+
+
+    rgba(15,23,42,.25);
+
+
+    color:white;
+
+
+    font-size:2rem;
+
+
+    opacity:0;
+
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+.gallery-item:hover .gallery-overlay{
+
+
+    opacity:1;
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+.gallery-grid{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+.gallery{
+
+
+    padding:90px 5%;
+
+}
+
+
+
+.gallery-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.gallery-header h2{
+
+
+    font-size:2.3rem;
+
+
+}
+
+
+}

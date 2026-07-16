@@ -1,0 +1,227 @@
+.navbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 8%;
+
+    background:
+    rgba(255,255,255,.85);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:
+    1px solid rgba(0,0,0,.08);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.06);
+
+}
+
+
+
+/* Brand */
+
+.brand{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.logo{
+
+    font-size:1.8rem;
+
+    font-weight:800;
+
+    letter-spacing:.5px;
+
+
+    background:
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #1e40af
+    );
+
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+
+    cursor:pointer;
+
+    margin:0;
+
+    transition:.3s;
+
+}
+
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+.brand span{
+
+    font-size:.75rem;
+
+    color:#6b7280;
+
+    font-weight:600;
+
+}
+
+
+
+/* Navigation */
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+
+.nav-links a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#111827;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
+
+
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    transition:.3s;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+/* Smooth Scrolling */
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:800px){
+
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:15px 5%;
+
+    }
+
+
+    .brand{
+
+        align-items:center;
+
+    }
+
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+
+}
