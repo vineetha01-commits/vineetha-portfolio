@@ -1,7 +1,7 @@
 import heroImg from "../assets/hero.png";
 import "../styles/Hero.css";
 import background from "../assets/background.jpg";
-import resume from "../assets/Vineetha_Budige_Resume.pdf";
+import resume from "../assets/vineetha_budige_resume.pdf";
 
 function Hero() {
   return (
