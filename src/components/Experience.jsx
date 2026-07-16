@@ -1,11 +1,23 @@
 import "../styles/Experience.css";
+import experienceBg from "../assets/experiencebg.jpg";
 
 function Experience() {
 
   return (
 
-    <section className="experience" id="experience">
-
+    <section
+      className="experience"
+      id="experience"
+      style={{
+        backgroundImage: `
+        linear-gradient(
+          rgba(15,23,42,0.75),
+          rgba(15,23,42,0.85)
+        ),
+        url(${experienceBg})
+        `
+      }}
+    >
 
 
       <div className="experience-header">
@@ -31,11 +43,7 @@ function Experience() {
 
 
 
-
-
-
       <div className="experience-card">
-
 
 
         <div className="experience-top">
@@ -55,16 +63,12 @@ function Experience() {
           </div>
 
 
-
           <span>
             Jan 2025 - Jan 2026
           </span>
 
 
         </div>
-
-
-
 
 
 
@@ -79,92 +83,56 @@ function Experience() {
 
 
 
-
-
-
         <h5>
           Key Responsibilities
         </h5>
 
 
 
-
         <ul>
-
 
           <li>
             Prepared and executed software test cases based on project requirements.
           </li>
 
-
           <li>
             Performed software testing and supported quality validation activities.
           </li>
-
 
           <li>
             Created technical documentation and maintained project records.
           </li>
 
-
           <li>
             Designed system architecture and network diagrams using MS Visio.
           </li>
-
 
           <li>
             Prepared comparison matrices and reports using MS Excel.
           </li>
 
-
           <li>
             Supported engineering workflows and project coordination activities.
           </li>
-
 
         </ul>
 
 
 
 
-
-
         <div className="experience-skills">
 
-
-          <span>
-            Software Testing
-          </span>
-
-
-          <span>
-            Test Case Design
-          </span>
-
-
-          <span>
-            MS Visio
-          </span>
-
-
-          <span>
-            MS Excel
-          </span>
-
-
-          <span>
-            Technical Documentation
-          </span>
-
+          <span>Software Testing</span>
+          <span>Test Case Design</span>
+          <span>MS Visio</span>
+          <span>MS Excel</span>
+          <span>Technical Documentation</span>
 
         </div>
 
 
 
-
       </div>
-
-
 
 
     </section>
@@ -172,6 +140,5 @@ function Experience() {
   );
 
 }
-
 
 export default Experience;

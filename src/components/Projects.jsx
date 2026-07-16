@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/Projects.css";
+import projectsBg from "../assets/projectsbg.jpg";
+
 
 function Projects() {
 
@@ -8,11 +10,8 @@ function Projects() {
     {
       icon: "📁",
       badge: "ECIL Project",
-
       title: "Purchase File Tracking System",
-
       subtitle: "Software Testing • Documentation",
-
       details: "ECIL | Graduate Engineer Apprentice",
 
       technologies: [
@@ -84,7 +83,19 @@ function Projects() {
 
   return (
 
-    <section className="projects" id="projects">
+    <section
+      className="projects"
+      id="projects"
+      style={{
+        backgroundImage: `
+        linear-gradient(
+          rgba(15,23,42,0.65),
+          rgba(15,23,42,0.75)
+        ),
+        url(${projectsBg})
+        `
+      }}
+    >
 
 
       <div className="projects-header">
@@ -101,7 +112,6 @@ function Projects() {
 
 
       </div>
-
 
 
 
@@ -128,17 +138,14 @@ function Projects() {
             </div>
 
 
-
             <h3>
               {project.title}
             </h3>
 
 
-
             <h4>
               {project.subtitle}
             </h4>
-
 
 
             <p className="project-details">
@@ -149,7 +156,6 @@ function Projects() {
 
             <div className="project-tech">
 
-
               {project.technologies.map((tech,i)=>(
 
                 <span key={i}>
@@ -158,16 +164,13 @@ function Projects() {
 
               ))}
 
-
             </div>
-
 
 
 
             <p>
               {project.description}
             </p>
-
 
 
 

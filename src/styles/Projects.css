@@ -2,7 +2,11 @@
 
     padding:120px 10%;
 
-    background:#f8fafc;
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
 
 }
 
@@ -24,7 +28,7 @@
 
     font-size:3rem;
 
-    color:#111827;
+    color:white;
 
     margin-bottom:15px;
 
@@ -34,7 +38,7 @@
 
 .projects-header p{
 
-    color:#6b7280;
+    color:#e5e7eb;
 
     font-size:1.2rem;
 
@@ -48,9 +52,6 @@
 
 
 
-
-
-/* Project Grid */
 
 .projects-grid{
 
@@ -69,12 +70,9 @@
 
 
 
-
-/* Project Cards */
-
 .project-card{
 
-    background:white;
+    background:rgba(255,255,255,.92);
 
     padding:35px;
 
@@ -82,13 +80,11 @@
 
     border-top:5px solid #2563eb;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 
     transition:.35s ease;
 
     cursor:pointer;
-
-    display:block;
 
     text-decoration:none;
 
@@ -102,15 +98,11 @@
 
     transform:translateY(-12px);
 
-    box-shadow:0 20px 40px rgba(37,99,235,.18);
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
 
 }
 
 
-
-
-
-/* Project Icon */
 
 .project-icon{
 
@@ -121,10 +113,6 @@
 }
 
 
-
-
-
-/* Card Title */
 
 .project-card h3{
 
@@ -138,17 +126,11 @@
 
 
 
-
-
-/* Subtitle */
-
 .project-card h4{
 
     color:#2563eb;
 
     font-size:1rem;
-
-    font-weight:600;
 
     margin-bottom:18px;
 
@@ -156,71 +138,17 @@
 
 
 
-
-
-/* Description */
-
 .project-card p{
 
     color:#4b5563;
 
     line-height:1.8;
 
-    margin-bottom:28px;
-
 }
 
 
 
-
-
-/* Button */
-
-.project-btn{
-
-    display:inline-block;
-
-    color:#2563eb;
-
-    font-size:1rem;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-
-
-.project-card:hover .project-btn{
-
-    transform:translateX(8px);
-
-}
-
-
-
-
-
-/* Responsive */
-
-@media(max-width:900px){
-
-
-    .projects-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .projects-header h2{
-
-        font-size:2.3rem;
-
-    }
-
-    .project-badge{
+.project-badge{
 
     display:inline-block;
 
@@ -244,13 +172,9 @@
 
 .project-details{
 
-    color:#6b7280;
-
     font-size:.95rem;
 
     font-weight:600;
-
-    margin-bottom:20px;
 
 }
 
@@ -264,7 +188,7 @@
 
     gap:10px;
 
-    margin-bottom:22px;
+    margin:20px 0;
 
 }
 
@@ -284,17 +208,33 @@
 
     font-weight:600;
 
-    transition:.3s;
+}
+
+
+
+.project-btn{
+
+    color:#2563eb;
+
+    font-weight:700;
 
 }
 
 
 
-.project-tech span:hover{
+@media(max-width:900px){
 
-    background:#2563eb;
+    .projects-grid{
 
-    color:white;
+        grid-template-columns:1fr;
 
-}
+    }
+
+
+    .projects-header h2{
+
+        font-size:2.3rem;
+
+    }
+
 }
