@@ -16,13 +16,11 @@ function Skills() {
 
   const skills = [
 
-
     {
       icon:<FaClipboardCheck />,
       name:"Software Testing",
       category:"Testing & QA"
     },
-
 
     {
       icon:"📝",
@@ -30,13 +28,11 @@ function Skills() {
       category:"Testing & QA"
     },
 
-
     {
       icon:<FaNetworkWired />,
       name:"Networking & Configuration",
       category:"Technical"
     },
-
 
     {
       icon:<FaReact />,
@@ -44,13 +40,11 @@ function Skills() {
       category:"Frontend"
     },
 
-
     {
       icon:<FaHtml5 />,
       name:"HTML",
       category:"Frontend"
     },
-
 
     {
       icon:<FaCss3Alt />,
@@ -58,13 +52,11 @@ function Skills() {
       category:"Frontend"
     },
 
-
     {
       icon:<FaFileWord />,
       name:"MS Office Suite",
       category:"Tools"
     },
-
 
     {
       icon:<FaVideo />,
@@ -72,56 +64,41 @@ function Skills() {
       category:"Creative"
     }
 
-
   ];
-
 
 
   return (
 
-
     <section className="skills" id="skills">
 
-
-
       <div className="skills-header">
-
 
         <h2>
           Technical Skills & Tools
         </h2>
-
 
         <p>
           A combination of engineering knowledge, testing experience,
           frontend development, and creative skills.
         </p>
 
-
       </div>
-
-
 
 
 
       <div className="skills-grid">
 
-
-
         {
           skills.map((skill,index)=>(
 
-
-            <div
+            <div 
               className="skill-card"
               key={index}
             >
 
-
               <div className="skill-icon">
                 {skill.icon}
               </div>
-
 
 
               <h3>
@@ -129,27 +106,20 @@ function Skills() {
               </h3>
 
 
-
               <span>
                 {skill.category}
               </span>
 
 
-
             </div>
-
 
           ))
         }
 
-
-
       </div>
 
 
-
     </section>
-
 
   );
 
