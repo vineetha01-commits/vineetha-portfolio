@@ -1,108 +1,55 @@
-import "../styles/Contact.css";
-import resume from "../assets/Vineetha_Budige_Resume.pdf";
+import heroImg from "../assets/hero.png";
+import "../styles/Hero.css";
+import background from "../assets/background.jpg";
+import resume from "../assets/vineetha_budige_resume.pdf";
 
-function Contact() {
-
+function Hero() {
   return (
+    <section
+      id="home"
+      className="hero"
+      style={{
+        backgroundImage: `linear-gradient(rgba(15,23,42,0.20), rgba(15,23,42,0.20)), url(${background})`,
+      }}
+    >
+      <div className="hero-content">
+        <img
+          src={heroImg}
+          alt="Vineetha Budige"
+          className="hero-img"
+        />
 
-    <section className="contact" id="contact">
+        <p className="hero-tag">
+  Building reliable software with creativity
+</p>
+
+        <h1>Hi, I'm Vineetha Budige</h1>
+
+        <h2>Software Testing • Networking • Creative Storyteller</h2>
 
 
-      <div className="contact-header">
-
-
-        <p className="contact-tag">
-          🚀 Open To Opportunities
+        <p className="hero-description">
+          Passionate Electronics & Communication Engineering graduate with hands-on experience in software testing, technical documentation, and project support. Dedicated to building reliable solutions while continuously learning and growing.
         </p>
 
+        
 
-        <h2>
-          Let's Connect
-        </h2>
+        <div className="hero-buttons">
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>📄 Resume</button>
+          </a>
 
-
-        <p>
-          Interested in collaboration, technology, or creative projects?
-          Feel free to reach out and let's build something meaningful.
-        </p>
-
-
+          <a href="#contact">
+            <button>📩 Let's Connect</button>
+          </a>
+        </div>
       </div>
-
-
-
-
-
-      <div className="contact-card">
-
-
-
-        <a href="mailto:vinithabudige0410@gmail.com">
-          ✉ Email Me
-        </a>
-
-
-
-
-
-        <a
-          href="https://www.linkedin.com/in/vineetha-budige-19654b219"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          🔗 LinkedIn
-        </a>
-
-
-
-
-
-        <a
-          href="https://www.instagram.com/vineetha._.goud_/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📸 Instagram
-        </a>
-
-
-
-
-
-        <a
-          href={resume}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📄 Download Resume
-        </a>
-
-
-
-      </div>
-
-
-
-
-
-      <div className="contact-note">
-
-
-        <p>
-          💡 Always learning, building, and exploring opportunities
-          in technology and creative spaces.
-        </p>
-
-
-      </div>
-
-
-
     </section>
-
   );
-
 }
 
-
-export default Contact;
+export default Hero;
